@@ -1,0 +1,127 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    background-color: #f7f7f0;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap:3rem;
+    margin: 1rem;
+}
+#heading{
+    text-align: center;
+    font-size: 30px;
+}
+/* ----------------Add Section ---------------------- */
+.addSection{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap:1rem;
+}
+#itemName,#priority,#deadline{
+    font-size: 18px;
+    border:2px solid black;
+    font-weight:500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#itemName{
+    flex-grow: 1;
+    width:30%;
+    padding: 7.2px;
+    height:50px;
+    background-color: #f7f7f0;
+}
+#itemName::placeholder{
+    font-weight: 500;
+    color:black;
+}
+#deadline{
+    width:30%;
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#calendar{
+    border:none;
+    width:40%;
+    padding: 11px;
+    font-size: 16px;
+}
+#dateText{
+    padding: 6px;
+}
+#priority{
+    width:30%;
+    height:50px;
+    flex-grow: 1;
+    padding:6px;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+select{
+    border: none;
+    padding: 11px;
+    background-color: #f7f7f0;
+    width:40%;
+}
+select:focus{
+    border: none;
+}
+
+#calendar{
+    margin-left: auto;
+    background-color: #f7f7f0;
+}
+.btn{
+    color:white;
+    background-color: black;
+    text-align: center;
+    border: none;
+    width:8rem;
+    padding:8px;
+    height: 50px;
+}
+
+/* ---------------- ---X X X X X X X X X X X X ----------------------*/
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 1rem;;
+}
+.task{
+    color:white;
+    background-color: black;
+    border-radius: 10px;
+    padding:20px 15px;
+    display: flex;
+    justify-content: space-between;
+    border:1px solid black;
+    align-items: center;
+    margin:5px;
+}
+.taskItem{
+    width:32%;
+}
+#taskIcon{
+    display: flex;
+    gap:1.5rem;
+}
+.hide{
+    display: none;
+}
